@@ -5,13 +5,13 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
 Console.WriteLine("Введите число N");
-int number = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 
-PrintNumbersToN(number);
+PrintNumbersNToOne(N);
 
-void PrintNumbersToN(int n)
+void PrintNumbersNToOne(int n)
 {
     if (n < 1) return;
-    PrintNumbersToN(n-1);
-    Console.Write(n + " ");
+    Console.Write(n + ", ");
+    PrintNumbersNToOne(n-1);
 }
