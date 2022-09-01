@@ -12,15 +12,15 @@ Console.Write("Введите значение N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 int SUM = 0;
 Console.Write($"Сумма чисел от {M} до {N}: ");
-Console.Write(PrintMToN(N,M,SUM));
+Console.Write(SumNumbersMToN(N,M,SUM));
 
-int PrintMToN(int n, int m, int sum )
+int SumNumbersMToNN(int n, int m, int sum )
 {
     if (m<= n)
     {
         sum = sum + m;
         m++;
-        return PrintMToN(n, m, sum);
+        return SumNumbersMToNN(n, m, sum);
     }
     return sum; 
 }
