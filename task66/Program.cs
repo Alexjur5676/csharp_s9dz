@@ -10,17 +10,18 @@ Console.Write("Введите значение M: ");
 int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите значение N: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int SUM = 0;
-Console.Write($"Сумма чисел от {M} до {N}: ");
-Console.Write(SumNumbersMToN(N,M,SUM));
+int Sum = 0;
 
-int SumNumbersMToNN(int n, int m, int sum )
+Console.Write($"Сумма чисел от {M} до {N}: ");
+Console.Write(SumNumbersMToN(N, M, Sum));
+
+int SumNumbersMToN(int n, int m, int sum )
 {
     if (m<= n)
     {
         sum = sum + m;
         m++;
-        return SumNumbersMToNN(n, m, sum);
+        return SumNumbersMToN(n, m, sum);
     }
     return sum; 
 }
