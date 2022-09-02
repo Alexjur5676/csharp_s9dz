@@ -12,9 +12,9 @@ Console.Write("Введите значение N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 int Sum = 0;
 
-if (M >= N )
+if (M >= N || M < 0 || N < 0 )
 {
-  Console.Write("Введите значение M больше N" );
+  Console.Write("Введите положительное значение M меньшее N" );
 } 
 else
 {
