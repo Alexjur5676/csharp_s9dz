@@ -12,8 +12,16 @@ Console.Write("Введите значение N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 int Sum = 0;
 
-Console.Write($"Сумма чисел от {M} до {N}: ");
-Console.Write(SumNumbersMToN(N, M, Sum));
+if (M >= N )
+{
+  Console.Write("Введите значение M больше N" );
+} 
+else
+{
+  SumNumbersMToN(N, M, Sum);
+  Console.Write($"Сумма чисел от {M} до {N}: ");
+  Console.Write(SumNumbersMToN(N, M, Sum));
+}
 
 int SumNumbersMToN(int n, int m, int sum )
 {
