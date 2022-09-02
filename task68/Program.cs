@@ -8,13 +8,15 @@ Console.Write("Введите неотрицательное значение N:
 int N = Convert.ToInt32(Console.ReadLine());
 
 if (M < 0 || N < 0)
-    Console.Write("Введите неотрицательное значение M и N" );
+{
+  Console.Write("Введите неотрицательное значение M и N" );
+} 
 else
-    Ackerman_function(M, N);
-    
-Console.Write("Значение функции Акермана: ");
-Console.Write(Ackerman_function(M, N));
-
+{
+  Ackerman_function(M, N);
+  Console.Write("Значение функции Акермана: ");
+  Console.Write(Ackerman_function(M, N));
+}
 int Ackerman_function(int m, int n)
 {
   if (m == 0)
